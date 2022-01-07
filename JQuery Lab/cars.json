@@ -1,0 +1,5 @@
+[{"id":1,"name":"Hyundai Creta", "model":"2020", "price":2000000, "usage_info":"Have used for 1 years", "brand":"Hyundai", "fuel type":"Petrol","img":"creta.jpeg"},
+{"id":2,"name":"KIA Seltos", "model":"2018", "price":2200000, "usage_info":"Have used for 3 years", "brand":"Kia", "fuel type":"Diesel","img":"seltos.jfif"},
+{"id":3,"name":"Mahindra Thar", "model":"2016", "price":1600000, "usage_info":"Have used for 5 years", "brand":"Mahindra", "fuel type":"Petrol","img":"thar.png"},
+{"id":4,"name":"Tata harrier", "model":"2019", "price":1800000, "usage_info":"Have used for 2 years", "brand":"Tata", "fuel type":"Diesel","img":"tata.jpg"},
+{"id":5,"name":"Renault Duster", "model":"2017", "price":800000, "usage_info":"Have used for 3 years", "brand":"Renault", "fuel type":"Diesel","img":"duster.jfif"}]

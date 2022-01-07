@@ -1,0 +1,37 @@
+Authentication module is programmed into implementing the following features. 
+
+Feature name: View Login Info 
+
+The sub-feature to be programmed is to display the username while viewing the user’s login info.  
+
+UI RULES: 
+
+User Login portal is designed using html and bootstrap. 
+
+The general requirements are username and password either to login as a Doctor or Patient. 
+
+Form is designed to accept the username and password. 
+
+A “Log-In" button is displayed which will navigate the user to the dashboard when the credentials are authenticated. 
+
+If the password is wrong, an alert message is displayed to notify the user. 
+
+The navigation bar is a component used from bootstrap to display the clinic name and doctor’s name.  
+
+To the left-most corner, user name is displayed with a dropdown feature alongside their profile picture. 
+
+Data Rules: 
+
+The data which is used in the portal is accessed through a JSON file. 
+
+To use the JSON file along with TypeScript, import the .json file and access the different fields by dot operator. 
+
+Business RULES: 
+
+In the login portal, you can either login as a doctor or a patient. By using click function, we validate the type of role. When “log in as doctor” is clicked, the type field is assigned the value “Doctor” and vice-versa when the type field is Patient. 
+
+The Log-In button when clicked, checks if the typed password is the same as the password given in JSON file. 
+
+Routing is done through navigate function which is called when we click on the Log-In button. 
+
+The username in the dashboard’s navbar is by accessing the username given in the json data file.  

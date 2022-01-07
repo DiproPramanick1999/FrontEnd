@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="./AddEmployee.html">Add Employee</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./SearchEmployee.html">Search Employee</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./DisplayEmployee.html">Display Employee</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container">
+        <h2>Add Employee Details</h2>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="Name">Name:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="EmpId">Employee Id:</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="empId" placeholder="Enter Employee Id" name="EmpId">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="roleName">Role Name:</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="sel1">
+                        <option value="Junior Software Developer">Junior Software Developer</option>
+
+                        <option value="Senior Software Developer">Senior Software Developer</option>
+
+                        <option value="Junior Quality Analyst">Junior Quality Analyst</option>
+
+                        <option value="Senior Quality Analyst">Senior Quality Analyst</option>
+
+                        <option value="Business Analyst">Business Analyst</option>
+
+                        <option value="Team Lead">Team Lead</option>
+
+                        <option value="Manager">Manager</option>
+                      </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="date">Date Of Joining</label>
+                <div class="col-sm-10">
+                  <input type="date" class="form-control" id="date" placeholder="Enter Joining Date" name="date">
+                </div>
+            </div>
+          <div class="form-group">        
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-success" onclick="return submitbtn()">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <script src="TaxCalculator.js"></script>
+</body>
+</html>l

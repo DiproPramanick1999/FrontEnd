@@ -1,0 +1,39 @@
+.header {
+    width: 100%;
+    height: 100px;
+    background: #D8D8D8;
+}
+
+/* Use float to get this container in its desired location. */
+
+.content-left {
+    width: 34%;
+    /* This height is a placeholder. You will need to make some adjustments to get this container to look like the design. */
+    height: 700px;
+    background: #4d4949;
+    float: left;
+    
+}
+
+
+/* Use float to get this container in its desired location. */
+
+.content-mid {
+    width: 66%;
+    /* This height is a placeholder. You will need to make some adjustments to get this container to look like the design. */
+    height: 700px;
+    background: #B0B0B0;
+    float: right;
+}
+
+/* Use float to get this container to the bottom of the screen  */
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background: #D8D8D8;
+    position:absolute;
+    bottom: -250px;
+
+    
+}

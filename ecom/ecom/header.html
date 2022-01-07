@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <!-- EXTERNAL LINKS -->
+    <link rel="stylesheet" href="css/header.css" />
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <section>
+        <div id="container">
+          <!-- LOGO -->
+          <div id="shopName">
+            <a href="index.html"><b>Skill</b>Cart</a>
+          </div>
+          <!-- MENU -->
+          <div id="collection">
+            <div id="clothing">
+              <a href="clothing.html">CLOTHING</a>
+            </div>
+            <div id="accessories">
+              <a href="accessories.html">ACCESSORIES</a>
+            </div>
+          </div>
+          <!-- SEARCH -->
+          <div id="search">
+            <i class="fas fa-search search"></i>
+            <input
+              type="text"
+              id="input"
+              name="searchBox"
+              placeholder="Search for Clothing and Accessories"
+            />
+          </div>
+          <!-- CART & USER -->
+          <div id="user">
+            <a href="cart.html"
+              ><i class="fas fa-shopping-cart addedToCart"></i
+            ><div id="badge">0</div></a>
+            <a href="#" id="profile"><i class="fas fa-user-circle userIcon"></i>
+              <div id="disp">
+
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <script>
+      $('#profile').click(function(){
+         $.get("Profile.html",function(data){
+          document.getElementById("disp").innerHTML = data;
+          $('#disp').toggle(1000);
+         })
+        
+      })
+    </script>
+  </body>
+</html>

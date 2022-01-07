@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Details</title>
+    <!-- <link rel="stylesheet" href="/box1.css"> -->
+    <link rel="stylesheet" href="css/contentDetails.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+      <!-- Header -->
+    <div id="header"></div>
+    <script>
+        load("header.html");
+        function load(url) {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            // 3rd para: async: Bydefault: true. Indicate whether or not to perform the opration asynchrounously.
+            // If it is false then send() method does not return until the response is received;
+            req.send(null);
+            document.getElementById('header').innerHTML = req.responseText;
+        }
+    </script>
+
+    <div id="containerProduct">
+        <!-- JS rendering -->
+    </div>
+    <script src="js/contentDetails.js"></script>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+    <script>
+        load("footer.html");
+        function load(url) {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById('footer').innerHTML = req.responseText;
+        }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="carwala.css">
+    <title>CarWala</title>
+</head>
+<body>
+    <div class="content bg"><br>
+        <div class="navbar">
+            <img src="logo.png" alt="car-logo" width="180vw">
+            <!-- <i class="fa fa-car" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp; -->
+            <p class="logoname">CARWALA</p>
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <hr class="hr"><br>
+            <div class="row">
+                
+                <div class="col-sm-3 features">
+                    <div class="overlay">
+                        <h4 style="font-weight: bold;">FEATURES</h4>
+                    </div>
+                    <div class="brand">
+                        <h4 style="font-weight: bold;">Brand</h4>
+                        <input type="checkbox" id="myCheck1" onclick="func2()" value="KIA">
+                        <label for="">KIA</label><br>
+                        <input type="checkbox" id="myCheck2" onclick="func2()" value="Tata">
+                        <label for="">TATA</label><br>
+                        <input type="checkbox" id="myCheck3" onclick="func()" value="MAHINDRA">
+                        <label for="">MAHINDRA</label><br>
+                        <input type="checkbox" id="myCheck4" onclick="func()" value="HYUNDAI">
+                        <label for="">HYUNDAI</label><br>
+                        <input type="checkbox" id="myCheck5" onclick="func()" value="RENAULT">
+                        <label for="">RENAULT</label><br>
+                        <h4 style="font-weight: bold;">Price</h4>
+                        <input type="text" style="width:18vw"><br><br>
+                        <input type="range" min="500000" max="2500000">
+                        <h4 style="font-weight: bold;">Fuel Type</h4>
+                        <input type="radio">
+                        <label>Petrol</label><br>
+                        <input type="radio">
+                        <label>Diesel</label>
+                    </div>
+                </div>
+                <div class="col-sm-6 features">
+                    <div class="overlay" id="overlayId">
+                        <h4 style="font-weight: bold;">CARS</h4>
+                    </div>
+                <div class="scroll" id="info">
+                    <!-- <div class="row space">
+                        <div class="col-sm-6">
+                            <img src="creta.jpeg" width="300vw">
+                        </div>
+                        <div class="col-sm-6"  style="padding-left: 60px;" id="all">
+                            <p id="namess">Hyundai Creta</p>
+                            <p>Model: 2020</p>
+                            <p>Rs. 9,83,000/-</p>
+                            <p>Have used for 5 months</p>
+                        </div>
+                    </div>
+                    <div class="row space">
+                        <div class="col-sm-6">
+                            <img src="seltos.jfif" width="300vw">
+                        </div>
+                        <div class="col-sm-6"  style="padding-left: 60px;" id="all">
+                            <p id="name">KIA Seltos</p>
+                            <p>Model: 2018</p>
+                            <p>Rs. 9,89,000/-</p>
+                            <p>Have used for 2 years</p>
+                        </div>
+                    </div> -->
+                    <!-- <div class="row space">
+                        <div class="col-sm-6">
+                            <img src="seltos.jfif" width="300vw">
+                        </div>
+                        <div class="col-sm-6"  style="padding-left: 60px;">
+                            <p>Kia Seltos</p>
+                            <p>Model: 2018</p>
+                            <p>Rs. 9,89,000/-</p>
+                            <p>Have used for 2 years</p>
+                        </div>
+                    </div> -->
+                </div>
+                </div>
+                <div class="col-sm-2 features">
+                    <div class="overlay" id="overlayId">
+                        <h4 style="font-weight: bold;">ADS</h4>
+                    </div>
+                <div class="scrol">
+                    <div class="row space">
+                        <img src="ad1.jfif" alt="ad1-pic" width="170vw" >
+                    </div>
+                    <!-- <div class="row space">
+                        <img src="ad1.jfif" alt="ad1-pic">
+                    </div> -->
+                </div>
+                </div>
+            </div>
+            <br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+        <br>
+    </div>
+    <script src="carwala.js"></script>
+</body>
+</html>
